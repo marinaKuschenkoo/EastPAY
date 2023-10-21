@@ -319,5 +319,6 @@
 #pin-11:hover .map-point__box,
 #pin-12:hover .map-point__box
     {
+      transition: all 0s 9999999s;
       display: block;
     }

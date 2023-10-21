@@ -393,6 +393,7 @@ header a:hover {
 }
 .popup-menu-wrapper nav {
   font-family: Montserrat-SemiBold;
+  color: #000;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -1131,18 +1132,18 @@ header a:hover {
   }
 }
 
-#pin-1:hover .map-point__box,
-#pin-2:hover .map-point__box,
-#pin-3:hover .map-point__box,
-#pin-4:hover .map-point__box,
-#pin-5:hover .map-point__box,
-#pin-6:hover .map-point__box,
-#pin-7:hover .map-point__box,
-#pin-8:hover .map-point__box,
-#pin-9:hover .map-point__box,
-#pin-10:hover .map-point__box,
-#pin-11:hover .map-point__box,
-#pin-12:hover .map-point__box {
+#pin-1:active .map-point__box,
+#pin-2:active .map-point__box,
+#pin-3:active .map-point__box,
+#pin-4:active .map-point__box,
+#pin-5:active .map-point__box,
+#pin-6:active .map-point__box,
+#pin-7:active .map-point__box,
+#pin-8:active .map-point__box,
+#pin-9:active .map-point__box,
+#pin-10:active .map-point__box,
+#pin-11:active .map-point__box,
+#pin-12:active .map-point__box {
   display: block;
 }
 
@@ -1774,6 +1775,11 @@ header a:hover {
   transition: all 0.2s ease-in;
 }
 
+  @media (max-width:431px) {
+    .header__wrapper::after {
+      top: -16px !important;
+    }
+  }
 .page {
   display: flex;
   flex-direction: column;
