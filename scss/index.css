@@ -393,7 +393,6 @@ header a:hover {
 }
 .popup-menu-wrapper nav {
   font-family: Montserrat-SemiBold;
-  color: #000;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -420,6 +419,7 @@ header a:hover {
 
 .popup-button {
   border-radius: 15px;
+  color: #000;
   background: #FF701B;
   box-shadow: 0px 14px 14px -12px rgba(255, 213, 29, 0.4) inset;
   font-family: Montserrat-SemiBold;
