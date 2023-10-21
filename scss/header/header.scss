@@ -24,6 +24,9 @@ header a:hover {
     left: 0;
     background: radial-gradient(107.55% 46% at 50% 50%, #FF701B 0%, rgba(2, 21, 25, 0) 50.52%);
     z-index: -1;
+    @include _431 {
+        top: -16px;
+    }
 }
 .header__wrapper {
     display: flex;
@@ -296,6 +299,7 @@ display: flex;
     }
     nav{
         @include montserratSemiBold();
+        color: #000;
         font-size: 16px;
         text-transform: uppercase;
         list-style: none;
