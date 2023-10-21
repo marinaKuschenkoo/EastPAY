@@ -1157,6 +1157,11 @@ header a:hover {
   width: 100%;
   z-index: -1;
 }
+@media (max-width: 431px) {
+  .swiper {
+    height: 272px;
+  }
+}
 
 .swiper-slide {
   width: 844px !important;
@@ -1908,7 +1913,7 @@ header a:hover {
 
 .swiper-pagination {
   position: relative;
-  margin-top: 34px;
+  margin-top: 95px;
   display: none;
 }
 @media (max-width: 431px) {
