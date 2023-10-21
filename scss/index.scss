@@ -1,0 +1,197 @@
+@import "./fonts/fonts.scss";
+@import './mixins/mixins.scss';
+@import './header/header.scss';
+@import './main__about/main__about.scss';
+@import './main__benefits/main__benefits.scss';
+@import './main__directions/main__directions.scss';
+@import './main__workplace/main__workplace.scss';
+@import './main__reviews/main__rewiews.scss';
+@import './main__exchange/main__exchange.scss';
+@import './footer/footer.scss';
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.button-exchange {
+    @include buttonStyle();
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    width: 288px;
+    border-radius: 15px;
+    background: #FF701B;
+    height: 52px;
+    box-shadow: 0px 0px 14px 4px rgba(255, 112, 27, 0.86);
+    position: relative;
+    z-index: 0;
+        li {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            text-transform: uppercase;
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        @include _860 {
+          width: 164px;
+          height: 29px;
+          li {
+            font-size: 16px;
+            a {
+                width: 19px;
+                height: 17px;
+            }
+        }
+        }
+        @include _431 {
+            width: 164px;
+            height: 29px;
+            li {
+             font-size: 16px;
+            }
+        }
+}
+.button-exchange:hover {
+  cursor: pointer;
+  background-color: #fa7725;
+  box-shadow: 0px 0px 14px 4px rgba(243, 235, 230, 0.86);
+  transition: all 0.2s ease-in;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #1A1A1A;
+}
+.main {
+    width: 100%;
+}
+.section-header {
+    @include montserratLight();
+    font-size: 64px;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    color: #979797;
+    margin-bottom: 119px;
+    margin-top: -70px;
+    z-index: -1;
+    @include _600 {
+        font-size: 32px;
+    }
+    @include _431 {
+        margin-top: -58px;
+        max-width: 402px;
+        margin-bottom: 28px;
+    }
+}
+.border {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 15px; 
+        padding: 1px; 
+        background:linear-gradient(to top, black, transparent, white 110%); 
+        -webkit-mask: 
+           linear-gradient(#fff 0 0) content-box, 
+           linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+                mask-composite: exclude; 
+    }
+    @include _431 {
+        align-items: flex-start;
+    }
+}
+.main__workplace-header {
+    margin-bottom: 34px;
+    margin-top: 115px;
+}
+.main__reviews-header {
+    margin-top: 70px;
+}
+
+.main__exchange-header {
+    margin-top: 138px;
+    margin-bottom: 62px;
+    @include _431 {
+        margin-top: 100px;
+        margin-bottom: 10px;
+      }
+  }
+.main__benefits {
+    overflow: hidden;
+    transform: translateY(-60%);
+    max-width: 1420px;
+    margin: 0 auto;
+}
+.benefits-slider {
+    @include montserratExtraLight ();
+    font-size: 30px;
+    letter-spacing: -0.406px;
+    width: 410px !important;
+    height: 249px !important;
+    position: relative;
+    transition-property: transform;
+    display: block;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.50) 0%, #171C1D 100%);
+     box-shadow: 0px 18px 24px -14px rgba(0, 0, 0, 0.40);
+     display: flex !important;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     @include _600 {
+        font-size: 20px;
+        width: 251px !important;
+        height: 136px !important;
+     }
+}
+
+  .scroll-hidden{
+    overflow: hidden;
+  }
+  .swiper-pagination{
+    position: relative;
+    margin-top: 34px;
+    display: none;
+    @include _431 {
+        display: block;
+    }
+  }
+
+
+ 
+
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+        

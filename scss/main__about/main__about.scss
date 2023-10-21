@@ -1,0 +1,83 @@
+@import '../mixins/mixins.scss';
+.main__about {
+    position: relative; 
+    border: 1px solid #000;
+    mix-blend-mode: screen;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        &:before {
+            content: "";
+            background-size: cover;
+            background: center / contain url('../images/bg-chart.svg') no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+}
+
+.main__about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 682px;
+    position: relative;
+    padding-top: 70px;
+    max-width: 1700px;
+    margin: 0 auto;
+    @include _600 {
+        height: 470px;
+    }
+    @include _431 {
+        padding-top: 0px;
+        height: 384px;
+    }
+}
+.main__about-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1117px;
+    margin-top: 68px;
+}
+.main__about-header {
+    text-align: center;
+    font-family: Montserrat-Light;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -3.362px;
+    border: 0;
+    margin: 0;
+
+    @include _860{
+        font-size: 70px;
+    }
+    @include _600{
+        font-size: 36px;
+        color: #CFCFCF
+    }
+}
+.main__description {
+    @include montserratExtraLight();
+    margin-top: 2px;
+    @include _860{
+        font-size: 20px;
+    }
+    @include _600{
+        font-size: 16px;
+        color: #C2C2C2
+    }
+}
+.main__exchange-button {
+    margin-top: 60px;
+    @include _431 {
+        margin-top: 5px;
+    }
+}
+.exhange-img {
+    @include exchangeButtonImg();
+}

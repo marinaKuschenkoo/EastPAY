@@ -1,0 +1,356 @@
+.main__exchange {
+  background: radial-gradient(90% 46% at 50% 50%, rgba(255, 112, 27, 0.75) 1.56%, rgba(26, 26, 26, 0) 44.79%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main__exchange-header {
+  margin-top: 138px;
+  margin-bottom: 62px;
+}
+@media (max-width: 431px) {
+  .main__exchange-header {
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+.main__exchange-form {
+  max-width: 1420px;
+  padding-top: 63px;
+  padding-bottom: 61px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+  row-gap: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(11, 51, 60, 0.57);
+  background: linear-gradient(180deg, rgba(2, 22, 24, 0.47) 0%, rgba(4, 27, 31, 0.6) 100%);
+  box-shadow: 0px 28px 24px -14px rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(13.5914087296px);
+          backdrop-filter: blur(13.5914087296px);
+}
+@media (max-width: 860px) {
+  .main__exchange-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 431px) {
+  .main__exchange-form {
+    row-gap: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+.main__exchange-label {
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #B8B8B8;
+  font-size: 20px;
+  letter-spacing: -0.312px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 431px) {
+  .main__exchange-label {
+    font-size: 16px;
+  }
+}
+.main__exchange-label .main__currency-wrapper {
+  flex-direction: row;
+  display: flex;
+  margin-top: 10px;
+}
+@media (max-width: 860px) {
+  .main__exchange-label .main__currency-wrapper {
+    background: radial-gradient(107.55% 46% at 50% 50%, rgba(255, 112, 27, 0.75) 1.56%, rgba(26, 26, 26, 0) 44.79%);
+  }
+}
+.main__exchange-label .main__currency-wrapper .main__exchange-currency {
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  font-size: 30px;
+  letter-spacing: -0.469px;
+  max-width: 220px;
+}
+
+.main__exchange-input {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.187px;
+  color: #E4E4E4;
+  font-size: 30px;
+  letter-spacing: -0.469px;
+  padding-left: 20px;
+  width: 100%;
+  height: 80px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background: #021216;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .main__exchange-input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 431px) {
+  .main__exchange-input {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.main__exchange-input:nth-child(n+2) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.main__currency {
+  display: inline-block;
+  position: relative;
+  width: 220px;
+}
+@media (max-width: 431px) {
+  .main__currency {
+    width: 72px;
+  }
+}
+
+.main__currency-button {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid #454545;
+  background: #021216;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 17px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (max-width: 431px) {
+  .main__currency-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 21px;
+  }
+  .main__currency-button img {
+    width: 15px;
+    height: 20px;
+  }
+}
+
+.main__currency-name {
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #F8F8F8;
+  font-size: 30px;
+  letter-spacing: -0.469px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  margin-left: 25px;
+}
+@media (max-width: 431px) {
+  .main__currency-name {
+    display: none;
+  }
+}
+
+.main__currency-box {
+  position: absolute;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background: #021216;
+  display: inline-block;
+  display: flex;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+}
+
+.active .main__currency-box {
+  display: block;
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.main__currency-items {
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.main__currency-item {
+  color: #F8F8F8;
+  font-size: 30px;
+  letter-spacing: -0.469px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  margin-left: 25px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+
+.main__exchange-rate {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.187px;
+  color: #FFF;
+  font-size: 18px;
+  letter-spacing: -0.281px;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 2;
+  justify-content: space-between;
+  margin-top: -15px;
+}
+@media (max-width: 1100px) {
+  .main__exchange-rate {
+    grid-auto-flow: row;
+  }
+}
+@media (max-width: 431px) {
+  .main__exchange-rate {
+    display: none;
+  }
+}
+
+.main__form-exchange-button {
+  grid-column: span 2;
+  justify-self: center;
+  margin-top: 22px;
+}
+@media (max-width: 860px) {
+  .main__form-exchange-button {
+    align-self: center;
+  }
+}
+@media (max-width: 431px) {
+  .main__form-exchange-button {
+    margin-top: 12px;
+  }
+}
+
+.main__agreement {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.187px;
+  grid-column: span 2;
+  justify-self: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.281px;
+  color: #FFF;
+  color: #8E8E8B;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (max-width: 860px) {
+  .main__agreement {
+    align-self: center;
+  }
+}
+@media (max-width: 431px) {
+  .main__agreement {
+    margin-top: 21px;
+  }
+}
+
+.main__agreement-input {
+  width: 30px;
+  height: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.main__agreement {
+  position: relative;
+}
+
+.main__agreement label {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #5A5A5A;
+  background: #021519;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.main__agreement label:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.main__agreement label:after {
+  content: "";
+  height: 6px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.main__agreement input[type=checkbox] {
+  visibility: hidden;
+}
+
+.main__agreement input[type=checkbox]:checked + label {
+  background-color: rgba(255, 112, 27, 0.86);
+  border-color: rgba(255, 112, 27, 0.86);
+}
+
+.main__agreement input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}/*# sourceMappingURL=main__exchange.css.map */

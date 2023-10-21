@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAST PAY</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" type="images/x-icon" href="./images/logo.svg" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__menu">
+                <li><a href="#" class="header__menu-item">О компании</a></li>
+                <li><a href="#" class="header__menu-item">Новости</a></li>
+                <li><a href="#" class="header__menu-item">Как это работает</a></li>
+                <li><a href="#" class="header__menu-item">Контакты</a></li>
+            </nav>
+            <a href="/" class="header__logo"></a>
+            <div class="header__other">
+                <ul class="header__socials">
+                    <li class="header__social">
+                        <a href="#" class="header__social-link social-tg"></a>
+                        <a class="header__social-text">@firstex</a>
+                    </li>
+                    <li class="header__social">
+                        <a href="#" class="header__social-link social-mail"></a>
+                        <a class="header__social-text">info@east-pay.com</a>
+                    </li>
+                </ul>
+                <button class="header__account-button">Личный кабинет</button>
+                <div class="header__languages">
+                    <div id="languages" class="header__language-button">
+                        <img src="./images/UK-flag.svg" alt="" class="header__flag">
+                        <img src="./images/arrow-down.svg" alt="" class="header__arrow">
+                    </div>
+
+                    <div class="header__languages-box">
+                        <ul class="header__languages-items">
+                            <li class="header__languages-item">
+                                <img src="./images/russian-flag.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id='burger-menu' class="burger-menu">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="popup-menu">
+        <div class="popup-menu-wrapper">
+            <nav>
+                <a>О компании</a>
+                <a>Новости</a>
+                <a>Как это работает</a>
+                <a>Контакты</a>
+                <a>Заказать консультацию</a>
+                <a>Сотрудничество</a>
+            </nav>
+            <div class="popup-menu-block">
+                <button class="popup-button">Личный кабинет</button>
+                <div class="popup__languages">
+                    <div id="popup-languages" class="header__language-button">
+                        <img src="./images/UK-flag.svg" alt="" class="header__flag">
+                        <img src="./images/arrow-down.svg" alt="" class="header__arrow">
+                    </div>
+
+                    <div class="header__languages-box popup__languages-box">
+                        <ul class="header__languages-items">
+                            <li class="header__languages-item">
+                                <img src="./images/russian-flag.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="popup-menu-mail">
+                <a href="#" class="header__social-link social-mail"></a>
+                <span class="header__social-text">info@east-pay.com</span>
+            </ul>
+        </div>
+    </div>
+    <main class="main">
+        <section class="main__about">
+            <div class="main__about-wrapper">
+                <div class="main__about-block">
+                    <h1 class="main__about-header">Международная финансовая логистика</h1>
+                    <p class="main__description"> Автоматизированная система обмена валют</p>
+                </div>
+                <ul class="main__exchange-button button-exchange">
+                    <li>
+                        <a class="main__about-button-img exhange-img"></a>
+                        <span class="main__about-button-text">обменять</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="main__benefits">
+            <div class="swiper-container main__benefits-wrapper">
+                <div class="swiper-wrapper wrapper__benefits">
+                    <div class="swiper-slide benefits-slider border">Выгодный обмен</div>
+                    <div class="swiper-slide benefits-slider border">Надежность на высоком уровне</div>
+                    <div class="swiper-slide benefits-slider border">Быстрый обмен</div>
+                </div>
+            </div>
+        </section>
+        <section class="main__directions">
+            <h2 class="main__directions-header section-header">Популярные направления обмена</h2>
+            <div class="main__directions-wrapper">
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">Crypto</span>
+                    </div>
+                </div>
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">наличные</span>
+                    </div>
+                </div>
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">wire/revolut</span>
+                    </div>
+                </div>
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">alipay/wechat</span>
+                    </div>
+                </div>
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">банковский перевод</span>
+                    </div>
+                </div>
+                <div class="main__directions-border border">
+                    <div class="main__directions-block">
+                        <span class="main__directions-text">swift/sepa</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="main__directions-button button-exchange">
+                <li>
+                    <a class="main__directions-button-img exhange-img"></a>
+                    <span class="main__directions-button-text">обменять</span>
+                </li>
+            </ul>
+        </section>
+        <section class="main__workplace">
+            <h2 class="main__workplace-header section-header">Где мы работаем</h2>
+            <ul class="map">
+                <img src='./images/bg-world.svg' alt="" />
+                <div id="pin-1" class="box">
+                    <ul class="map-point__box">
+                        <h3>Северная Америка</h3>
+                        <li class="map-point__country"><img src="./images/flags/do.svg" alt=""><span>Доминиканская
+                                республика (Санто-Доминго и др. города)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/ca.svg" alt="">Канада (Ванкувер,
+                            Торонто, Калгари по запросу)</li>
+                    </ul>
+                </div>
+                <div id="pin-2" class="box">
+                    <ul class="map-point__box">
+                        <h3>Центральная Америка</h3>
+                        <li class="map-point__country"><img src="./images/flags/hn.svg" alt=""><span>Гондурас</span>
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/cr.svg" alt="">Коста-Рика</li>
+                        <li class="map-point__country"><img src="./images/flags/mx.svg" alt="">Мексика (Мехико)</li>
+                        <li class="map-point__country"><img src="./images/flags/pa.svg" alt="">Панама</li>
+                    </ul>
+                </div>
+                <div id="pin-3" class="box">
+                    <ul class="map-point__box">
+                        <h3>Южная Америка</h3>
+                        <li class="map-point__country"><img src="./images/flags/ar.svg" alt=""><span>Аргентина
+                                (Буэнос-Айрес)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/bo.svg" alt="">Боливия</li>
+                        <li class="map-point__country"><img src="./images/flags/br.svg" alt="">Бразилия</li>
+                        <li class="map-point__country"><img src="./images/flags/co.svg" alt="">Колумбия</li>
+                        <li class="map-point__country"><img src="./images/flags/cl.svg" alt="">Чили</li>
+                        <li class="map-point__country"><img src="./images/flags/ec.svg" alt="">Эквадор</li>
+                    </ul>
+                </div>
+                <div id="pin-4" class="box">
+                    <ul class="map-point__box">
+                        <h3>Западная Европа</h3>
+                        <li class="map-point__country"><img src="./images/flags/at.svg" alt=""><span>Австрия
+                                (Вена)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/gb-eng.svg" alt="">Великобритания
+                            (Лондон, Манчестер)</li>
+                        <li class="map-point__country"><img src="./images/flags/hu.svg" alt="">Венгрия (Будапешт)</li>
+                        <li class="map-point__country"><img src="./images/flags/de.svg" alt="">Германия (Берлин,
+                            Франкфурт, Мюнхен и др. города)</li>
+                        <li class="map-point__country"><img src="./images/flags/gr.svg" alt="">Греция (Афины, Салоники)
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/es.svg" alt="">Испания (Барселона,
+                            Мадрид, Аликанте, Валенсия и др. города)</li>
+                        <li class="map-point__country"><img src="./images/flags/nl.svg" alt="">Нидерланды (Амстердам,
+                            Роттердам)</li>
+                        <li class="map-point__country"><img src="./images/flags/mf.svg" alt="">Франция (Париж, Лион,
+                            Ницца, Канны, Монако)</li>
+                        <li class="map-point__country"><img src="./images/flags/ch.svg" alt="">Швейцария (Цюрих, Женева,
+                            Лугано)</li>
+                    </ul>
+                </div>
+                <div id="pin-5" class="box">
+                    <ul class="map-point__box">
+                        <h3>Северная Европа</h3>
+                        <li class="map-point__country"><img src="./images/flags/bv.svg" alt=""><span>Норвегия
+                                (Осло)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/fi.svg" alt="">Финляндия (Хельсинки)
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/se.svg" alt="">Швеция (Стокгольм)</li>
+                    </ul>
+                </div>
+                <div id="pin-6" class="box">
+                    <ul class="map-point__box">
+                        <h3>Восточная Европа</h3>
+                        <li class="map-point__country"><img src="./images/flags/al.svg" alt=""><span>Албания
+                                (Тирана)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/bg.svg" alt="">Болгария (София, Варна)
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/ge.svg" alt="">Грузия (Тбилиси, Батуми)
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/md.svg" alt="">Молдова (Кишинев)</li>
+                        <li class="map-point__country"><img src="./images/flags/pl.svg" alt="">Польша (Варшава, Краков,
+                            др. города по запросу)</li>
+                        <li class="map-point__country"><img src="./images/flags/ro.svg" alt="">Румыния (Бухарест)</li>
+                        <li class="map-point__country"><img src="./images/flags/rs.svg" alt="">Сербия (Белград)</li>
+                        <li class="map-point__country"><img src="./images/flags/cz.svg" alt="">Чехия (Прага)</li>
+                    </ul>
+                </div>
+                <div id="pin-7" class="box">
+                    <ul class="map-point__box">
+                        <h3>СНГ</h3>
+                        <li class="map-point__country"><img src="./images/flags/am.svg" alt=""><span>Армения
+                                (Ереван)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/by.svg" alt="">Беларусь (Минск)</li>
+                        <li class="map-point__country"><img src="./images/flags/kz.svg" alt="">Казахстан (Алмата, Астана
+                            по запросу)</li>
+                        <li class="map-point__country"><img src="./images/flags/kg.svg" alt="">Кыргызстан (Бишкек)</li>
+                        <li class="map-point__country"><img src="./images/flags/tj.svg" alt="">Таджикистан (Душанбе)
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/uz.svg" alt="">Узбекистан (Ташкент)</li>
+                    </ul>
+                </div>
+                <div id="pin-8" class="box">
+                    <ul class="map-point__box">
+                        <h3>Западная Азия</h3>
+                        <li class="map-point__country"><img src="./images/flags/il.svg" alt=""><span>Израиль (Тель-Авив
+                                и др. города по запросу)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/cy.svg" alt="">Кипр (Лимассол, Ларнака,
+                            Пафос, Никосия, турецкая сторона)</li>
+                        <li class="map-point__country"><img src="./images/flags/ae.svg" alt="">ОАЭ (Дубай)</li>
+                        <li class="map-point__country"><img src="./images/flags/tr.svg" alt="">Турция (Стамбул, Алания и
+                            др. города)</li>
+                    </ul>
+                </div>
+                <div id="pin-9" class="box">
+                    <ul class="map-point__box">
+                        <h3>Южная Азия</h3>
+                        <li class="map-point__country"><img src="./images/flags/in.svg" alt=""><span>Индия (Дели,
+                                Мумбаи, Калькутта, Гоа по запросу)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/mv.svg" alt=""><span>Мальдивы</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pin-10" class="box">
+                    <ul class="map-point__box">
+                        <h3>Восточная Азия</h3>
+                        <li class="map-point__country"><img src="./images/flags/kr.svg" alt=""><span>Республика Корея
+                                (Сеул и др. Города в пределах 100 км)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/cn.svg" alt=""><span>Китай (Гуанчжоу,
+                                Шеньчжене, Шанхае, Пекине, др. по запросу)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/hk.svg" alt=""><span>Гонконг</span></li>
+                        <li class="map-point__country"><img src="./images/flags/jp.svg" alt=""><span>Япония
+                                (Токио)</span></li>
+                    </ul>
+                </div>
+                <div id="pin-11" class="box">
+                    <ul class="map-point__box">
+                        <h3>Юго-Восточная Азия</h3>
+                        <li class="map-point__country"><img src="./images/flags/vn.svg" alt=""><span>Вьетнам (Хошимин и
+                                др.)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/id.svg" alt=""><span>Индонезия (Бали
+                                )</span></li>
+                        <li class="map-point__country"><img src="./images/flags/kh.svg" alt=""><span>Камбоджа</span>
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/sg.svg" alt=""><span>Сингапур</span>
+                        </li>
+                        <li class="map-point__country"><img src="./images/flags/th.svg" alt=""><span>Таиланд (Пхукет,
+                                Паттайя)</span></li>
+                    </ul>
+                </div>
+                <div id="pin-12" class="box">
+                    <ul class="map-point__box">
+                        <h3>Австралия и Океания</h3>
+                        <li class="map-point__country"><img src="./images/flags/au.svg" alt=""><span>Австралия (Сидней и
+                                другие города)</span></li>
+                        <li class="map-point__country"><img src="./images/flags/nz.svg" alt=""><span>Новая Зеландия
+                                (Веллингтон)</span></li>
+                    </ul>
+                </div>
+            </ul>
+            <ul class="main__workplace-button button-exchange">
+                <li>
+                    <a class="main__workplace-button-img exhange-img"></a>
+                    <span class="main__workplace-button-text">обменять</span>
+                </li>
+            </ul>
+        </section>
+        <section class="main__reviews">
+            <h2 class="main__reviews-header section-header">Отзывы пользователей</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="border swiper-slide-wrapper">
+                            <h4 class="person-name">Владимир</h4>
+                            <p class="person-description">Обмен криптовалют на нашем сайте отличается высоким
+                                качеством и надежностью. Автоматическая система позволяет в кратчайшие сроки
+                                осуществлять транзакции, покупать биткоины и другие криптовалюты за рубли и
+                                доллары</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border swiper-slide-wrapper">
+                            <h4 class="person-name">Владимир</h4>
+                            <p class="person-description">Обмен криптовалют на нашем сайте отличается высоким
+                                качеством и надежностью. Автоматическая система позволяет в кратчайшие сроки
+                                осуществлять транзакции, покупать биткоины и другие криптовалюты за рубли и
+                                доллары</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border swiper-slide-wrapper">
+                            <h4 class="person-name">Владимир</h4>
+                            <p class="person-description">Обмен криптовалют на нашем сайте отличается высоким
+                                качеством и надежностью. Автоматическая система позволяет в кратчайшие сроки
+                                осуществлять транзакции, покупать биткоины и другие криптовалюты за рубли и
+                                доллары</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border swiper-slide-wrapper">
+                            <h4 class="person-name">Владимир</h4>
+                            <p class="person-description">Обмен криптовалют на нашем сайте отличается высоким
+                                качеством и надежностью. Автоматическая система позволяет в кратчайшие сроки
+                                осуществлять транзакции, покупать биткоины и другие криптовалюты за рубли и
+                                доллары</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-nav-wrapper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="main__exchange">
+            <h2 class="main__exchange-header section-header">Обменять средства</h2>
+            <form class="main__exchange-form">
+                <label for="" class="main__exchange-label">
+                    Вы отдаете
+                    <div class="main__currency-wrapper">
+                        <div class="main__currency">
+                            <div id="given-currency" class="main__currency-button">
+                                <img src="./images/BTC.svg" alt="">
+                                <p class="main__currency-name">BTC</p>
+                                <p>&#8964;</p>
+                            </div>
+
+                            <div class="main__currency-box">
+                                <ul class="main__currency-items">
+                                    <li data-name="profile" class="main__currency-item"><img src="./images/sber.svg"
+                                            alt="">RUB</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="number" class="main__exchange-input" placeholder="min 0.002054 BTC">
+                    </div>
+                </label>
+                <label for="" class="main__exchange-label">
+                    Вы получаете
+                    <div class="main__currency-wrapper">
+                        <div class="main__currency received">
+                            <div id="received-currency" class="main__currency-button">
+                                <img src="./images/sber.svg" alt="">
+                                <p class="main__currency-name">RUB</p>
+                                <p>&#8964;</p>
+                            </div>
+
+                            <div class="main__currency-box">
+                                <ul class="main__currency-items">
+                                    <li data-name="profile" class="main__currency-item">
+                                        <img src="./images/BTC.svg" alt="">BTC
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" class="main__exchange-input" placeholder="min 20054 RUB">
+                    </div>
+                </label>
+                <label for="" class="main__exchange-label">
+                    E-mail
+                    <div class="main__currency-wrapper">
+                        <input type="number" class="main__exchange-input" placeholder="mail@example.ru">
+                    </div>
+                </label>
+                <label for="" class="main__exchange-label">
+                    Номер карты Сбербанк(RUB)
+                    <div class="main__currency-wrapper">
+                        <input type="number" class="main__exchange-input" placeholder="0000 0000 0000 0000">
+                    </div>
+                </label>
+                <ul class="main__exchange-rate">
+                    <li class="main__exchange-rate-item">
+                        Курс обмена: 1 BTC = 2 434 325.3592 RUB
+                    </li>
+                    <li class="main__exchange-rate-item">
+                        Резерв: 7 100 000 RUB
+                    </li>
+                </ul>
+                <ul class="main__form-exchange-button button-exchange">
+                    <li>
+                        <a class="main__exchange-button-img exhange-img"></a>
+                        <span class="main__exchange-button-text">обменять</span>
+                    </li>
+                </ul>
+                <label class="main__agreement">
+                    <input type="checkbox" name="agreement" id="agreement" value="1" class="main__agreement-input">
+                    <label for="agreement" class="main__agreement-label"></label>
+                    <span>Согласен с правилами обмена</span>
+
+                </label>
+            </form>
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    <nav class="footer__menu">
+                        <a class="footer__menu-item">Заказать консультацию</a>
+                        <a class="footer__menu-item">Сотрудничество</a>
+                        <a class="footer__menu-item">Контакты</a>
+                    </nav>
+                    <a href="#" class=""><img src="./images/logo.svg" alt="" class="footer__logo"></a>
+                    <p class="footer__copy">
+                        EastPay — Автообмен криптовалюты<br>© 2023
+                    </p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./picker.js"></script>
+</body>
+
+</html>

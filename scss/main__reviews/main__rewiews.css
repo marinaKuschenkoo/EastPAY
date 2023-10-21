@@ -1,0 +1,118 @@
+.main__reviews-header {
+  margin-top: 70px;
+  margin-bottom: 69px;
+}
+
+.swiper {
+  width: 100%;
+  z-index: -1;
+}
+
+.swiper-slide {
+  width: 844px !important;
+}
+@media (max-width: 431px) {
+  .swiper-slide {
+    width: 371px !important;
+    height: 149px !important;
+  }
+}
+
+.swiper-slide-wrapper {
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.5) 0%, #171C1D 100%);
+  box-shadow: 0px 18px 24px -14px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  padding-top: 53px !important;
+  padding-bottom: 49px !important;
+  padding-left: 39px !important;
+}
+
+.person-name {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.187px;
+  font-size: 20px;
+  letter-spacing: -0.312px;
+}
+@media (max-width: 431px) {
+  .person-name {
+    font-size: 15px;
+  }
+}
+
+.person-description {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.187px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  max-width: 646px;
+  margin-top: 8px;
+}
+@media (max-width: 431px) {
+  .person-description {
+    font-size: 12px;
+    line-height: 17px; /* 141.667% */
+    letter-spacing: -0.25px;
+  }
+}
+
+.swiper-nav-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 431px) {
+  .swiper-nav-wrapper {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 63px !important;
+  width: 63px !important;
+  background-image: url(../images/next-arrow.svg);
+}
+.swiper-button-next::after {
+  display: none;
+}
+
+.main__currency-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 14px 4px rgba(243, 235, 230, 0.86);
+  transition: all 0.2s ease-in;
+}
+
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 63px !important;
+  width: 63px !important;
+  background-image: url(../images/prev-arrow.svg);
+}
+.swiper-button-prev::after {
+  display: none;
+}/*# sourceMappingURL=main__rewiews.css.map */

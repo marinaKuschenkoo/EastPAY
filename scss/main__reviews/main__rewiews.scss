@@ -1,0 +1,80 @@
+@import '../mixins/mixins.scss';
+
+.main__reviews-header {
+    margin-top: 70px;
+    margin-bottom: 69px;
+}
+.swiper {
+    width: 100%;
+    z-index: -1;
+}
+.swiper-slide {
+    width: 844px !important;
+    @include _431 {
+      width: 371px !important;
+      height: 149px !important;
+    }
+  }
+  .swiper-slide-wrapper {
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.50) 0%, #171C1D 100%);
+    box-shadow: 0px 18px 24px -14px rgba(0, 0, 0, 0.40);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    padding-top: 53px !important;
+    padding-bottom: 49px !important;
+    padding-left: 39px !important; 
+  }
+    .person-name {
+        @include montserratBold();
+        font-size: 20px;
+        letter-spacing: -0.312px;
+        @include _431 {
+          font-size: 15px;
+        }
+    }
+    .person-description {
+        @include montserratRegular();
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.25px;
+        max-width: 646px;
+        margin-top: 8px;
+        @include _431 {
+          font-size: 12px;
+          line-height: 17px; /* 141.667% */
+          letter-spacing: -0.25px;
+        }
+    }
+    .swiper-nav-wrapper {
+        max-width: 1000px;
+        width:100%;
+        height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right: 0;
+        @include _431 {
+          display: none;
+      }
+    }
+    .swiper-button-next{
+        @include swiperNav();
+            background-image: url(../images/next-arrow.svg);
+          }
+          .main__currency-button:hover {
+              cursor: pointer;
+              box-shadow: 0px 0px 14px 4px rgba(243, 235, 230, 0.86);
+              transition: all 0.2s ease-in;
+          }
+          .swiper-button-prev {
+            @include swiperNav();
+            background-image: url(../images/prev-arrow.svg);
+          }
+          

@@ -1,0 +1,61 @@
+@import '../mixins/mixins.scss';
+
+.footer {
+    width: 100%;
+    padding-top: 73px;
+    padding-bottom: 71px;
+}
+          .footer__wrapper {
+            max-width: 1420px;
+            margin: 0 auto;
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include _860 {
+              flex-direction: column-reverse;
+            }
+          }
+          .footer__menu {
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 30px;
+            @include _860 {
+              order: 1;
+              grid-auto-flow: row;
+              row-gap: 13px;
+              justify-items: center;
+            }
+          }
+          .footer__menu-item {
+            @include montserratSemiBold();
+            list-style: none;
+          }
+          .footer__menu-item:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+          }
+          .footer__logo {
+            width: 76px;
+            height: 95px;
+            @include _860 {
+              order: 1;
+              margin-bottom: 16px;
+            }
+          }
+          .footer__logo:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+          }
+          .footer__copy {
+            @include montserratRegular();
+            font-size: 14px;
+            letter-spacing: -0.219px;
+            opacity: 0.5;
+            @include _860 {
+              margin-top: 16px;
+              text-align: center;
+            }
+          }

@@ -1,0 +1,130 @@
+@mixin montserratSemiBold () {
+    font-family: Montserrat-SemiBold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.187px;
+}
+@mixin montserratBold () {
+    font-family: Montserrat-Bold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.187px;
+}
+@mixin montserratRegular () {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.187px;
+}
+@mixin montserratMedium () {
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.25px;
+}
+@mixin montserratLight () {
+    font-family: Montserrat-Light;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1.681px;
+}
+@mixin montserratExtraLight () {
+    font-family: Montserrat-ExtraLight;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 28px;
+    letter-spacing: -0.312px;
+}
+@mixin buttonStyle () {
+    border-radius: 15px;
+    background: #FF701B;
+    box-shadow: 0px 14px 14px -12px rgba(255, 213, 29, 0.40) inset;
+}
+@mixin exchangeButtonImg () {
+    background:  center / contain url('../images/exchange.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    @include _431() {
+        width: 19px;
+        height: 17px;
+    }
+}
+@mixin mapPoints () {
+    position: absolute;
+    content: url('../images/Oval.svg');
+    z-index: 5;
+    @include _1280() {
+        width: 20px;
+        height: 20px;
+    }
+}
+$swiper-navigation-size: 63px;
+@mixin swiperNav () {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: $swiper-navigation-size !important;
+    width: $swiper-navigation-size !important;
+    &::after {
+        display: none;
+}
+}
+@mixin currencyName () {
+    color: #F8F8F8;
+    font-size: 30px;
+    letter-spacing: -0.469px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    margin-left: 25px;
+}
+@mixin currencyBox () {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #454545;
+    background: #021216;
+    display: inline-block;
+    display: flex;
+    cursor: pointer;
+}
+
+@mixin _1280 {
+    @media (max-width: 1280px){
+        @content;
+    }
+}
+@mixin _1100 {
+    @media (max-width: 1100px){
+        @content;
+    }
+}
+@mixin _860 {
+    @media (max-width: 860px){
+        @content;
+    }
+}
+@mixin _min860 {
+    @media (min-width: 861px){
+        @content;
+    }
+}
+@mixin _600 {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+@mixin _431 {
+    @media (max-width: 431px){
+        @content;
+    }
+}
